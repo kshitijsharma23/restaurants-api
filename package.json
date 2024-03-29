@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "Kshitij Sharma",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "NODE_OPTIONS=--max-old-space-size=8192 nodemon src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.30",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.11.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.1",
+    "prisma": "^5.11.0",
+    "trie-search": "^2.0.0"
+  }
+}
